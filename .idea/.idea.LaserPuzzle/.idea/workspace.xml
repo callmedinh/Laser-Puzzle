@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3170a67b-09a5-4663-9140-c4311fee2a04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/End.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Blocks/End.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/Start.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Blocks/Start.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/left_right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Blocks/left_right.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_down_left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Blocks/up_down_left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Blocks/up_left.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Blocks/up_right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,11 +15,39 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "feature/block-rotation"
+    "git-widget-placeholder": "feature/level-block-display",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.22f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Games\LaserPuzzle -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Games\LaserPuzzle" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.22f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Games\LaserPuzzle -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Games\LaserPuzzle" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>
