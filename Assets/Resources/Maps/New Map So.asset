@@ -13,11 +13,18 @@ MonoBehaviour:
   m_Name: New Map So
   m_EditorClassIdentifier: 
   blocks:
-  - position: {x: 0, y: 0}
-    type: 0
-  - position: {x: 1, y: 0}
+  - position: {x: 3, y: 0}
     type: 1
+    directions: 00000000
+  - position: {x: 1, y: 0}
+    type: 2
+    directions: 0000000001000000
   - position: {x: 2, y: 0}
     type: 2
-  - position: {x: 3, y: 0}
-    type: 2
+    directions: 0000000001000000
+  laserBlocks:
+  - position: {x: 0, y: 0}
+    type: 0
+    directions: 01000000
+  width: 4
+  height: 2

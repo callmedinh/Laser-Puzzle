@@ -14,7 +14,10 @@ namespace _Scripts.Core
         }
         public void ChangeState(T key)
         {
-            _currentState.Exit();
+            if (_currentState != null)
+            {
+                _currentState.Exit();
+            }
             _currentState = _states[key];
             _currentState.Enter();
         }

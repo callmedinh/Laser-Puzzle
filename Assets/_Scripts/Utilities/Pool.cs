@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using _Scripts.Base;
 using UnityEngine;
@@ -19,14 +18,15 @@ namespace _Scripts.Utilities
         {
             foreach (var item in poolItems)
             {
+                if (!_pools.ContainsKey(item.type))
+                {
+                    _pools[item.type] = new Stack<GameObject>();
+                }
                 for (int i = 0; i < item.size; i++)
                 {
-                    if (_pools.TryGetValue(item.type, out var stack))
-                    {
-                        var obj = Instantiate(item.prefab, transform);
-                        obj.SetActive(false);
-                        stack.Push(obj);
-                    }
+                    var obj = Instantiate(item.prefab, transform);
+                    obj.SetActive(false);
+                    _pools[item.type].Push(obj);
                 }
             }
         }
@@ -38,8 +38,8 @@ namespace _Scripts.Utilities
             {
                 stack.TryPop(out var obj);
                 block = obj;
+                block.SetActive(true);
             }
-            block.SetActive(true);
             return block;
         }
         public void ReturnPool(BlockType type, GameObject block)
