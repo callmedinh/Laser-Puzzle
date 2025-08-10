@@ -35,13 +35,18 @@ namespace _Scripts
             var obj = pool.GetPool(blockInfo.type);
             Vector2Int position = blockInfo.position;
             _mapPoints[position.x, position.y] = new Point(position.x, position.y, blockInfo.directions);
+            Rotatable rotatable = obj.GetComponent<Rotatable>();
+            if (rotatable != null)
+            {
+                rotatable.InitPosition(position);
+            }
             obj.transform.position = new Vector3(position.x, position.y, 0);
             
             Direction direction = blockInfo.directions[0];
             LaserController laserController = obj.GetComponent<LaserController>();
             if (laserController != null)
             {
-                StartCoroutine(laserController.TraceLaserPath(position, direction));
+                laserController.StartTrace(position, direction);
             }
         }
         private void SpawnMirrorBlock(BlockInfo blockInfo)
@@ -49,6 +54,11 @@ namespace _Scripts
             var obj = pool.GetPool(blockInfo.type);
             Vector2Int position = blockInfo.position;
             _mapPoints[position.x, position.y] = new Point(position.x, position.y, blockInfo.directions);
+            Rotatable rotatable = obj.GetComponent<Rotatable>();
+            if (rotatable != null)
+            {
+                rotatable.InitPosition(position);
+            }
             obj.transform.position = new Vector3(position.x, position.y, 0);
         }
 

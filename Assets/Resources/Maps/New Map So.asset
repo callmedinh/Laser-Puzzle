@@ -15,7 +15,7 @@ MonoBehaviour:
   blocks:
   - position: {x: 3, y: 0}
     type: 1
-    directions: 00000000
+    directions: 01000000
   - position: {x: 1, y: 0}
     type: 2
     directions: 0000000001000000
