@@ -9,8 +9,7 @@ namespace _Scripts.Base
     {
         public List<BlockInfo> blocks;
         public List<BlockInfo> laserBlocks;
-        public int width;
-        public int height;
+        public Vector2Int mapSize;
     }
 
     [System.Serializable]
@@ -24,6 +23,8 @@ namespace _Scripts.Base
     {
         LaserSource,
         LaserReceiver,
-        Mirror
+        Mirror01,
+        Mirror02,
+        Mirror03,
     }
 }

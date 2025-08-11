@@ -1,4 +1,6 @@
+using _Scripts.Controller;
 using Unity.VisualScripting;
+using UnityEngine;
 using IState = _Scripts.Base.IState;
 
 namespace _Scripts.Core.States

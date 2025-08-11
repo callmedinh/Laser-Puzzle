@@ -6,10 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="3170a67b-09a5-4663-9140-c4311fee2a04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/New Map So.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Maps/New Map So.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Controller/BlockController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Controller/Rotatable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Controller/BlockController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Controller/Rotatable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/End.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/End.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/Start.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/Start.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/left_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/left_right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_down_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_down_left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_left.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_right.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/New Map So.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/New Map So.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Base/MapSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Base/MapSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;callmedinh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/callmedinh/Laser-Puzzle.git&quot;,
+    &quot;accountId&quot;: &quot;2e13d070-2d00-44ae-bf41-32f3a2a2e046&quot;
+  }
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -132,7 +163,9 @@
       <workItem from="1754685057687" duration="4108000" />
       <workItem from="1754694130239" duration="4274000" />
       <workItem from="1754789198423" duration="2327000" />
-      <workItem from="1754828546643" duration="2290000" />
+      <workItem from="1754828546643" duration="2836000" />
+      <workItem from="1754877896552" duration="3613000" />
+      <workItem from="1754917371056" duration="6712000" />
     </task>
     <task id="LOCAL-00002" summary="Add Display Laser">
       <option name="closed" value="true" />
@@ -142,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754653392292</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implement recursive laser path calculation">
+      <option name="closed" value="true" />
+      <created>1754831142376</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754831142376</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +201,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Add generic singleton" />
     <MESSAGE value="Add Display Laser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Display Laser" />
+    <MESSAGE value="Implement recursive laser path calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement recursive laser path calculation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
