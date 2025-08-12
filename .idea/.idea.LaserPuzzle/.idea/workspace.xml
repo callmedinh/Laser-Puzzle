@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3170a67b-09a5-4663-9140-c4311fee2a04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Base/MapSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Base/MapSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" afterDir="false" />
     </list>
@@ -33,6 +33,10 @@
     &quot;accountId&quot;: &quot;2e13d070-2d00-44ae-bf41-32f3a2a2e046&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Services/GameServices.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Services/GameServicesImpl.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -57,6 +61,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -97,15 +102,13 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9836">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9836" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -148,7 +151,8 @@
       <workItem from="1754828546643" duration="2836000" />
       <workItem from="1754877896552" duration="3613000" />
       <workItem from="1754917371056" duration="6712000" />
-      <workItem from="1754966830689" duration="2602000" />
+      <workItem from="1754966830689" duration="10318000" />
+      <workItem from="1754994871772" duration="8006000" />
     </task>
     <task id="LOCAL-00002" summary="Add Display Laser">
       <option name="closed" value="true" />
@@ -166,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754831142376</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Successfully logged the level after the laser reached the gate">
+      <option name="closed" value="true" />
+      <created>1754969507822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754969507822</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +197,8 @@
     <MESSAGE value="Add generic singleton" />
     <MESSAGE value="Add Display Laser" />
     <MESSAGE value="Implement recursive laser path calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement recursive laser path calculation" />
+    <MESSAGE value="Successfully logged the level after the laser reached the gate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successfully logged the level after the laser reached the gate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -203,84 +216,23 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/MapManager.cs</url>
-          <line>47</line>
-          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\MapManager.cs" containingFunctionPresentation="Method 'SpawnLaserBlock'">
-            <startOffsets>
-              <option value="1565" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1617" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
           <line>101</line>
           <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'DrawLine'">
             <startOffsets>
-              <option value="3182" />
+              <option value="3144" />
             </startOffsets>
             <endOffsets>
-              <option value="3202" />
+              <option value="3164" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
-          <line>52</line>
-          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
-            <startOffsets>
-              <option value="1627" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1690" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
-          <line>55</line>
-          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
-            <startOffsets>
-              <option value="1752" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1783" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
-          <line>67</line>
-          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
-            <startOffsets>
-              <option value="2024" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2083" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
-          <line>68</line>
-          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
-            <startOffsets>
-              <option value="2100" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2156" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

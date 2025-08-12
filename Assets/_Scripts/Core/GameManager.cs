@@ -1,25 +1,31 @@
-using System;
-using _Scripts.Base;
 using _Scripts.Core.States;
+using _Scripts.Services;
+using _Scripts.Services.UI;
 using _Scripts.Utilities;
-using UnityEngine;
 
 namespace _Scripts.Core
 {
     public class GameManager : Singleton<GameManager>
     {
         private StateMachine<GameState> _stateMachine;
-        public MapSo mapTest;
         public override void Awake()
         {
             base.Awake();
             _stateMachine = new StateMachine<GameState>();
-            _stateMachine.AddState(GameState.Gameplay, new GameplayState());
+            _stateMachine.AddState(GameState.Gameplay, new GameplayState(new MapLoader(), new GameplayUI()));
+            _stateMachine.AddState(GameState.Home, new HomeState(new HomeUI()));
+            _stateMachine.AddState(GameState.GameOver, new GameOverState(new GameOverUI()));
+            _stateMachine.AddState(GameState.Win, new WinState(new WinUI()));
         }
 
         private void Start()
         {
-            _stateMachine.ChangeState(GameState.Gameplay);
+            _stateMachine.ChangeState(GameState.Home);
+        }
+
+        public void ChangeState(GameState state)
+        {
+            _stateMachine.ChangeState(state);
         }
     }
 
@@ -27,6 +33,7 @@ namespace _Scripts.Core
     {
         Gameplay,
         GameOver,
-        MainMenu,
+        Home,
+        Win,
     }
 }

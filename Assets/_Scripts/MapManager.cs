@@ -8,17 +8,14 @@ namespace _Scripts
 {
     public class MapManager : Singleton<MapManager>
     {
-        public MapSo map;
         public Pool pool;
         Point[,] _mapPoints;
-        private int _width;
-        private int _height;
+        private Vector2Int _mapSize;
 
-        public void InitMap()
+        public void InitMap(MapSo map)
         {
-            _width = map.mapSize.x;
-            _height = map.mapSize.y;
-            _mapPoints = new Point[_width, _height];
+            this._mapSize = map.mapSize;
+            _mapPoints = new Point[_mapSize.x, _mapSize.y];
             for (int i = 0; i < map.blocks.Count; i++)
             {
                 SpawnMirrorGateBlock(map.blocks[i]);
@@ -74,7 +71,7 @@ namespace _Scripts
 
         public Point GetPoint(int x, int y)
         {
-            if (x < 0 || y < 0 || x >= _width || y >= _height) return null;
+            if (x < 0 || y < 0 || x >= _mapSize.x || y >= _mapSize.y) return null;
             return _mapPoints[x, y];
         }
 
