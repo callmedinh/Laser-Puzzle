@@ -17,12 +17,11 @@ namespace _Scripts.Base
     {
         public Vector2Int position;
         public BlockType type;
-        public List<Direction> directions;
     }
     public enum BlockType
     {
         LaserSource,
-        LaserReceiver,
+        Gate,
         Mirror01,
         Mirror02,
         Mirror03,

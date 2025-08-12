@@ -6,29 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3170a67b-09a5-4663-9140-c4311fee2a04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/End.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/End.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/Start.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/Start.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/left_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/left_right.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_down_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_down_left.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_left.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Blocks/up_right.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/New Map So.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Maps/New Map So.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Base/MapSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Base/MapSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,13 +97,15 @@
       <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9836">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="9836" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -166,6 +148,7 @@
       <workItem from="1754828546643" duration="2836000" />
       <workItem from="1754877896552" duration="3613000" />
       <workItem from="1754917371056" duration="6712000" />
+      <workItem from="1754966830689" duration="2602000" />
     </task>
     <task id="LOCAL-00002" summary="Add Display Laser">
       <option name="closed" value="true" />
@@ -219,6 +202,84 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/MapManager.cs</url>
+          <line>47</line>
+          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\MapManager.cs" containingFunctionPresentation="Method 'SpawnLaserBlock'">
+            <startOffsets>
+              <option value="1565" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
+          <line>101</line>
+          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'DrawLine'">
+            <startOffsets>
+              <option value="3182" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3202" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
+          <line>52</line>
+          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
+            <startOffsets>
+              <option value="1627" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1690" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
+          <line>55</line>
+          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
+            <startOffsets>
+              <option value="1752" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1783" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
+          <line>67</line>
+          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
+            <startOffsets>
+              <option value="2024" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2083" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
+          <line>68</line>
+          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'Trace'">
+            <startOffsets>
+              <option value="2100" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2156" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

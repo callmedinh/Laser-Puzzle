@@ -21,12 +21,12 @@ namespace _Scripts
             _mapPoints = new Point[_width, _height];
             for (int i = 0; i < map.blocks.Count; i++)
             {
-                SpawnMirrorBlock(map.blocks[i]);
+                SpawnMirrorGateBlock(map.blocks[i]);
             }
 
             for (int i = 0; i < map.laserBlocks.Count; i++)
             {
-                SpawnLaserBlock(map.laserBlocks[i]);;
+                SpawnLaserBlock(map.laserBlocks[i]);
             }
         }
 
@@ -34,37 +34,41 @@ namespace _Scripts
         {
             var obj = pool.GetPool(blockInfo.type);
             Vector2Int position = blockInfo.position;
-            _mapPoints[position.x, position.y] = new Point(position.x, position.y, DirectionsConvertBasedType(blockInfo.type));
+            List<Direction> directions = DirectionsConvertBasedType(blockInfo.type);
+            _mapPoints[position.x, position.y] = new Point(position.x, position.y, directions);
             Rotatable rotatable = obj.GetComponent<Rotatable>();
             if (rotatable != null)
             {
                 rotatable.InitPosition(position);
             }
             obj.transform.position = new Vector3(position.x, position.y, 0);
-            
-            Direction direction = blockInfo.directions[0];
             LaserController laserController = obj.GetComponent<LaserController>();
             if (laserController != null)
             {
-                laserController.StartTrace(position, direction);
+                laserController.StartTrace(position, directions[0]);
             }
 
             _mapPoints[position.x, position.y].IsLaserOrigin = true;
         }
-        private void SpawnMirrorBlock(BlockInfo blockInfo)
+        private void SpawnMirrorGateBlock(BlockInfo blockInfo)
         {
             var obj = pool.GetPool(blockInfo.type);
             Vector2Int position = blockInfo.position;
-            _mapPoints[position.x, position.y] = new Point(position.x, position.y,DirectionsConvertBasedType(blockInfo.type));
+            List<Direction> directions = DirectionsConvertBasedType(blockInfo.type);
+            _mapPoints[position.x, position.y] = new Point(position.x, position.y,directions);
             Rotatable rotatable = obj.GetComponent<Rotatable>();
             if (rotatable != null)
             {
                 rotatable.InitPosition(position);
             }
             obj.transform.position = new Vector3(position.x, position.y, 0);
-            if (blockInfo.type == BlockType.LaserSource)
+            if (blockInfo.type == BlockType.Gate)
             {
-                _mapPoints[position.x, position.y].IsReceivedLaser = true;
+                _mapPoints[position.x, position.y].IsGate = true;
+            }
+            else
+            {
+                _mapPoints[position.x, position.y].IsMirror = true;
             }
         }
 
@@ -95,10 +99,8 @@ namespace _Scripts
                 case BlockType.LaserSource:
                     directions.Add(Direction.Left);
                     break;
-                case BlockType.LaserReceiver: 
+                case BlockType.Gate: 
                     directions.Add(Direction.Left);
-                    break;
-                default:
                     break;
             }
 
