@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3170a67b-09a5-4663-9140-c4311fee2a04" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaserPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Base/IRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Base/IRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Controller/Rotatable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Controller/Rotatable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Core/States/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/MapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Utilities/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Utilities/Pool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +156,12 @@
       <workItem from="1754877896552" duration="3613000" />
       <workItem from="1754917371056" duration="6712000" />
       <workItem from="1754966830689" duration="10318000" />
-      <workItem from="1754994871772" duration="8006000" />
+      <workItem from="1754994871772" duration="9409000" />
+      <workItem from="1755044027184" duration="15747000" />
+      <workItem from="1755128224952" duration="5571000" />
+      <workItem from="1755136473152" duration="5580000" />
+      <workItem from="1755151096954" duration="12992000" />
+      <workItem from="1755227261793" duration="16239000" />
     </task>
     <task id="LOCAL-00002" summary="Add Display Laser">
       <option name="closed" value="true" />
@@ -178,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754969507822</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Using IService for loader and display UI.">
+      <option name="closed" value="true" />
+      <created>1755012440097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755012440097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +215,8 @@
     <MESSAGE value="Add Display Laser" />
     <MESSAGE value="Implement recursive laser path calculation" />
     <MESSAGE value="Successfully logged the level after the laser reached the gate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successfully logged the level after the laser reached the gate" />
+    <MESSAGE value="Using IService for loader and display UI." />
+    <option name="LAST_COMMIT_MESSAGE" value="Using IService for loader and display UI." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -215,19 +233,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_Scripts/Controller/LaserController.cs</url>
-          <line>101</line>
-          <properties documentPath="D:\Games\LaserPuzzle\Assets\_Scripts\Controller\LaserController.cs" containingFunctionPresentation="Method 'DrawLine'">
-            <startOffsets>
-              <option value="3144" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3164" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

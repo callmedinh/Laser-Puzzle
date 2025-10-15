@@ -8,7 +8,7 @@ namespace _Scripts.Utilities
     {
         private Dictionary<BlockType, Stack<GameObject>> _pools = new Dictionary<BlockType, Stack<GameObject>>();
         public List<PoolItem> poolItems;
-
+        private Dictionary<BlockType, Stack<GameObject>> _activeObject = new();
         private void Awake()
         {
             InitPools();
@@ -40,6 +40,15 @@ namespace _Scripts.Utilities
                 block = obj;
                 block.SetActive(true);
             }
+
+            if (!_activeObject.ContainsKey(type))
+            {
+                _activeObject[type] = new Stack<GameObject>();
+            }
+            if (_activeObject.TryGetValue(type, out var stack2))
+            {
+                stack2.Push(block);
+            }
             return block;
         }
         public void ReturnPool(BlockType type, GameObject block)
@@ -48,6 +57,21 @@ namespace _Scripts.Utilities
             if (_pools.TryGetValue(type, out var stack))
             {
                 stack.Push(block);
+            }
+        }
+        public void DeactivateAll()
+        {
+            foreach (var activeObj in _activeObject)
+            {
+                foreach (var obj in activeObj.Value)
+                {
+                    if (obj != null)
+                    {
+                        obj.SetActive(false);
+                        _pools[activeObj.Key].Push(obj);
+                    }
+                }
+                activeObj.Value.Clear();
             }
         }
     }

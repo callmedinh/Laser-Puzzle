@@ -12,7 +12,7 @@ namespace _Scripts.Core
         {
             base.Awake();
             _stateMachine = new StateMachine<GameState>();
-            _stateMachine.AddState(GameState.Gameplay, new GameplayState(new MapLoader(), new GameplayUI()));
+            _stateMachine.AddState(GameState.Gameplay, new GameplayState(new MapService(), new GameplayUI()));
             _stateMachine.AddState(GameState.Home, new HomeState(new HomeUI()));
             _stateMachine.AddState(GameState.GameOver, new GameOverState(new GameOverUI()));
             _stateMachine.AddState(GameState.Win, new WinState(new WinUI()));
@@ -21,6 +21,11 @@ namespace _Scripts.Core
         private void Start()
         {
             _stateMachine.ChangeState(GameState.Home);
+        }
+
+        private void Update()
+        {
+            _stateMachine.Update();
         }
 
         public void ChangeState(GameState state)

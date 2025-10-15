@@ -27,24 +27,32 @@ namespace _Scripts
             }
         }
 
+        public void ClearMap()
+        {
+            if (pool != null)
+            {
+                pool.DeactivateAll(); // assuming you have this method in your Pool
+            }
+            if (_mapPoints != null)
+            {
+                for (int x = 0; x < _mapSize.x; x++)
+                {
+                    for (int y = 0; y < _mapSize.y; y++)
+                    {
+                        _mapPoints[x, y] = null;
+                    }
+                }
+            }
+            
+            _mapSize = Vector2Int.zero;
+        }
         private void SpawnLaserBlock(BlockInfo blockInfo)
         {
             var obj = pool.GetPool(blockInfo.type);
             Vector2Int position = blockInfo.position;
             List<Direction> directions = DirectionsConvertBasedType(blockInfo.type);
-            _mapPoints[position.x, position.y] = new Point(position.x, position.y, directions);
-            Rotatable rotatable = obj.GetComponent<Rotatable>();
-            if (rotatable != null)
-            {
-                rotatable.InitPosition(position);
-            }
+            _mapPoints[position.x, position.y] = new Point(position.x, position.y);
             obj.transform.position = new Vector3(position.x, position.y, 0);
-            LaserController laserController = obj.GetComponent<LaserController>();
-            if (laserController != null)
-            {
-                laserController.StartTrace(position, directions[0]);
-            }
-
             _mapPoints[position.x, position.y].IsLaserOrigin = true;
         }
         private void SpawnMirrorGateBlock(BlockInfo blockInfo)
@@ -52,12 +60,7 @@ namespace _Scripts
             var obj = pool.GetPool(blockInfo.type);
             Vector2Int position = blockInfo.position;
             List<Direction> directions = DirectionsConvertBasedType(blockInfo.type);
-            _mapPoints[position.x, position.y] = new Point(position.x, position.y,directions);
-            Rotatable rotatable = obj.GetComponent<Rotatable>();
-            if (rotatable != null)
-            {
-                rotatable.InitPosition(position);
-            }
+            _mapPoints[position.x, position.y] = new Point(position.x, position.y);
             obj.transform.position = new Vector3(position.x, position.y, 0);
             if (blockInfo.type == BlockType.Gate)
             {
